@@ -10,12 +10,27 @@ de aprendizaje automático para anticipar el abandono en educación superior,
 analizando además interpretabilidad (SHAP) y equidad por subgrupos.
 
 ## Datos
-- Fuente: Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021).
-  Predict Students' Dropout and Academic Success [Dataset]. UCI Machine
-  Learning Repository. https://doi.org/10.24432/C5MC89
-- Licencia del dataset: CC BY 4.0
-- 4.424 registros, 36 variables + objetivo (Graduate / Dropout / Enrolled)
-- Ver `data/DATA_CARD.md`
+
+Este repositorio incluye una copia **sin modificar** del conjunto de datos
+*Predict Students' Dropout and Academic Success*, publicado en el UCI Machine
+Learning Repository bajo licencia
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),
+que permite compartirlo y adaptarlo siempre que se atribuya la autoría.
+
+**Cita del dataset:**
+Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021).
+*Predict Students' Dropout and Academic Success* [Dataset]. UCI Machine
+Learning Repository. https://doi.org/10.24432/C5MC89
+
+**Organización de los datos:**
+- `data/raw/`: archivo original, sin cambios (nunca se edita).
+- `data/interim/` y `data/processed/`: versiones derivadas, generadas por el
+  código de este repositorio. Constituyen adaptaciones realizadas por la
+  autora del TFM.
+- `data/DATA_CARD.md`: procedencia, verificación de integridad y diccionario.
+
+La licencia CC BY 4.0 aplica al dataset. La licencia del código de este
+repositorio se indica en el archivo `LICENSE`.
 
 ## Estado
 - [x] Descripción y auditoría inicial del dataset

@@ -1,0 +1,113 @@
+Hola Valentina buenos días, muy bien por el avance en el primer entregable del trabajo de maestría, se realizan las siguientes observaciones:
+
+El título es demasiado extenso y acumula demasiados conceptos.
+
+El título incluye modelado predictivo, trayectorias académicas, educación superior, patrones socioeconómicos, vulnerabilidad, mitigación del abandono y enfoque experimental. Esta acumulación dificulta identificar cuál es la contribución principal del trabajo.
+
+Las expresiones «data-driven» y «mediante un enfoque experimental» añaden complejidad sin delimitar suficientemente el objeto de estudio. La naturaleza experimental del trabajo puede explicarse en la metodología, sin necesidad de incorporarla al título.
+
+Corrección requerida: reducir el título a una formulación que identifique el fenómeno estudiado, la contribución técnica y, si resulta pertinente, el momento en que se pretende anticipar el abandono.
+
+ 
+
+Existe una posible discrepancia entre el título y el alcance real del estudio.
+
+El título promete modelar trayectorias académicas e identificar patrones socioeconómicos de vulnerabilidad. Sin embargo, el planteamiento presentado en las páginas 4 y 5 se centra principalmente en comparar reglas de negocio tradicionales con modelos de ensamble, utilizando distintos escenarios temporales de disponibilidad de datos.
+
+Modelar trayectorias académicas puede implicar analizar secuencias de evolución a lo largo del tiempo. El diseño descrito parece orientarse, en cambio, a la clasificación del riesgo de abandono a partir de información disponible en distintos momentos.
+
+Corrección requerida: ajustar el título a la contribución que realmente se implementará y evaluará. Si no se desarrollará un modelo de trayectorias en sentido longitudinal, debe evitarse esa expresión.
+
+La identificación de patrones socioeconómicos todavía no está suficientemente delimitada.
+
+La expresión «patrones socioeconómicos de vulnerabilidad» sugiere que se realizará un análisis específico de los factores asociados al riesgo. Es necesario distinguir entre utilizar variables socioeconómicas como predictores, interpretar su influencia y demostrar asociaciones o patrones relevantes. Estas actividades no son equivalentes.
+
+La motivación combina datos de naturaleza diferente sin desarrollar suficientemente su relación.
+
+En las páginas 2 y 3 se presentan cifras de deserción por cohorte en Colombia y tasas de graduación en el plazo teórico y posteriormente. Aunque se advierte que son indicadores distintos y no directamente comparables, no se desarrolla suficientemente qué aporta cada uno a la justificación del problema.
+
+Corrección requerida: explicar qué dimensión del abandono se pretende abordar, por qué las cifras seleccionadas justifican una intervención predictiva y qué limitaciones presentan los indicadores institucionales existentes. No basta con acumular estadísticas: deben vincularse con la necesidad concreta que resolverá el trabajo.
+
+a brecha de investigación está formulada de manera demasiado amplia.
+
+Se afirma que existe un predominio de técnicas relativamente simples y de la exactitud como métrica principal. Sin embargo, esta conclusión se apoya principalmente en una revisión publicada en 2021 y en los resultados de los estudios seleccionados por sus autores.
+
+Se debe delimitar la afirmación al corpus revisado y evitar presentarla como una descripción universal del estado actual de la investigación. La revisión bibliográfica deberá actualizarse y justificar por qué los modelos de ensamble, las métricas orientadas a clases desbalanceadas y la evaluación de equidad constituyen una contribución pertinente frente a trabajos anteriores.
+
+La justificación del uso de variables socioeconómicas es insuficiente para sustentar el alcance anunciado.
+
+En las páginas 3 y 4 se argumenta que los factores socioeconómicos influyen en el abandono y que resulta necesario evaluar la equidad algorítmica. No obstante, no se especifica qué variables del conjunto de datos seleccionado representan realmente esas condiciones ni cuáles permiten evaluar diferencias entre grupos.
+
+Se recomienda identificar las variables disponibles relacionadas con la dimensión socioeconómica, diferenciándolas de las variables académicas y administrativas. Si el conjunto de datos no permite representar adecuadamente las condiciones socioeconómicas anunciadas en el título, deberá reducirse el alcance de esa afirmación.
+
+La comparación experimental todavía no está definida con precisión suficiente.
+
+En las páginas 4 y 5 se presentan tres escenarios temporales:
+
+E1
+: datos disponibles en el momento de la matrícula.
+E2
+: datos de matrícula más información del primer semestre.
+E3
+: datos de matrícula más información de los dos primeros semestres.
+Se indica que el sistema tradicional basado en reglas solo puede construirse a partir de E2
+, mientras que el modelo experimental podría utilizar E1
+. Esta diferencia temporal es relevante, pero no se explica cómo se garantizará que ambos enfoques se comparen bajo condiciones equivalentes.
+
+La diferencia entre SPADIES y el conjunto de datos de UCI está descrita, pero sus implicaciones no se desarrollan suficientemente.
+
+El documento explica que SPADIES considera periodos consecutivos sin matrícula, mientras que el conjunto de datos de UCI clasifica al estudiante según su resultado al finalizar la duración teórica del programa. Esta distinción es relevante, pero no basta con señalar que las definiciones son diferentes.
+
+Corrección requerida: explicar cómo esta diferencia afecta a la construcción de la variable objetivo, a la interpretación de los resultados y a la futura transferencia del modelo a Colombia. Debe quedar claro que el modelo no estará prediciendo exactamente el mismo fenómeno que mide SPADIES.
+
+El contexto colombiano no se conecta suficientemente con el diseño experimental portugués.
+
+Se menciona la necesidad de reentrenar y recalibrar los modelos antes de trasladarlos a Colombia, pero no se explica qué aspectos del conjunto de datos podrían limitar esa transferencia.
+
+Corrección requerida: identificar las diferencias que deberán analizarse en una futura adaptación, especialmente las definiciones de abandono, las características de los estudiantes, las variables disponibles y los periodos de seguimiento. No debe afirmarse que el modelo es aplicable al contexto colombiano mientras no exista una evaluación con datos de ese entorno.
+
+La revisión bibliográfica es principalmente descriptiva y necesita mayor síntesis comparativa.
+
+El apartado recorre los determinantes del abandono, los algoritmos de aprendizaje automático, las métricas de evaluación y la equidad algorítmica. Sin embargo, predomina la exposición sucesiva de resultados de distintos autores.
+
+Corrección requerida: incorporar una comparación estructurada de los estudios más relevantes. Para cada trabajo seleccionado, deben quedar identificados el conjunto de datos, el momento de predicción, los algoritmos evaluados, las métricas utilizadas, los principales resultados y las limitaciones que justifican la propuesta actual.
+
+No es necesario incluir una tabla por cada subapartado, pero sí demostrar de forma explícita qué se conoce, qué resultados son comparables y qué aspectos siguen sin resolverse.
+
+La revisión bibliográfica es principalmente descriptiva y necesita mayor síntesis comparativa.
+
+El apartado recorre los determinantes del abandono, los algoritmos de aprendizaje automático, las métricas de evaluación y la equidad algorítmica. Sin embargo, predomina la exposición sucesiva de resultados de distintos autores.
+
+Corrección requerida: incorporar una comparación estructurada de los estudios más relevantes. Para cada trabajo seleccionado, deben quedar identificados el conjunto de datos, el momento de predicción, los algoritmos evaluados, las métricas utilizadas, los principales resultados y las limitaciones que justifican la propuesta actual.
+
+No es necesario incluir una tabla por cada subapartado, pero sí demostrar de forma explícita qué se conoce, qué resultados son comparables y qué aspectos siguen sin resolverse.
+
+El objetivo general no aparece desarrollado como apartado independiente en la entrega.
+
+En las 13 páginas del documento recibido no se incluye el capítulo 3, «Objetivos concretos y metodología de trabajo». Aunque en la introducción se anticipa que se realizará una comparación experimental entre reglas de negocio y modelos de ensamble, esto no sustituye la formulación explícita del objetivo general.
+
+incorporar un objetivo general que describa el resultado de investigación que se pretende alcanzar, no solamente el desarrollo de un modelo predictivo.
+
+No se presentan objetivos específicos que permitan verificar el cumplimiento de la investigación.
+
+La metodología experimental está anticipada, pero no queda definida como protocolo reproducible.
+
+La introducción identifica tres escenarios temporales y una comparación entre reglas de negocio y modelos de ensamble. Sin embargo, no especifica todavía el procedimiento completo para ejecutar y evaluar los experimentos.
+
+No se concreta cómo se evitará la fuga de información ni se garantiza la comparabilidad experimental.
+
+Este aspecto es crítico porque los escenarios utilizan información disponible en momentos diferentes.
+
+Corrección requerida: explicar cómo se realizará la separación entre entrenamiento, validación y prueba; cómo se aplicarán las transformaciones y técnicas de balanceo; y cómo se mantendrá la independencia de los datos utilizados para la evaluación final. Las reglas de negocio y los modelos de ensamble también deben evaluarse sobre una base comparable, indicando las limitaciones derivadas de que el caso base solo pueda construirse en E2
+.
+
+ 
+
+Esas son las observaciones por favor revisarlas, son recomendaciones para mejorar el trabajo desde el inicio.
+
+Estoy atento a cualquier inquietud, si necesitas un espacio por favor me informa para agendarlo.
+
+Atentamente
+
+Javier Luna
+
